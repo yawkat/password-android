@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Password</string>
+
+    <string name="host">Host</string>
+    <string name="password">Password</string>
+    <string name="open">Open</string>
+    <string name="password_editor_hint">Password&#xA;More Info</string>
+    <string name="cancel">Cancel</string>
+    <string name="save">Save</string>
+    <string name="filter">Filter…</string>
+</resources>

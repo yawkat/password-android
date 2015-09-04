@@ -1,0 +1,16 @@
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat" />
+
+    <style name="ListItem">
+        <item name="android:padding">16dp</item>
+        <item name="android:gravity">start|center_vertical</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:color">?attr/colorPrimary</item>
+        <item name="android:background">?attr/listChoiceBackgroundIndicator</item>
+    </style>
+
+    <item name="toolbarColorNormal" type="color">#ff009688</item>
+    <item name="toolbarColorWarning" type="color">#ffff9800</item>
+</resources>
