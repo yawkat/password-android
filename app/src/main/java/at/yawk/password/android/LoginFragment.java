@@ -30,6 +30,12 @@ public class LoginFragment extends Fragment {
         database = ApplicationState.getDatabase(getActivity());
     }
 
+    @Override
+    public void onPause() {
+        super.onPause();
+        password.setText("");
+    }
+
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
