@@ -1,10 +1,9 @@
 apply plugin: 'com.android.application'
-apply plugin: 'retrolambda'
 apply plugin: 'com.tmiyamon.mdicons'
 
 android {
-    compileSdkVersion 23
-    buildToolsVersion "23.0.0"
+    compileSdkVersion 29
+    buildToolsVersion "29.0.2"
 
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
@@ -13,9 +12,10 @@ android {
     defaultConfig {
         applicationId "at.yawk.password.android"
         minSdkVersion 21
-        targetSdkVersion 22
+        targetSdkVersion 29
         versionCode 1
         versionName "1.0"
+        javaCompileOptions.annotationProcessorOptions.includeCompileClasspath = true
     }
     buildTypes {
         release {
@@ -39,8 +39,8 @@ android {
 }
 
 dependencies {
-    compile 'com.android.support:appcompat-v7:22.2.1'
-    compile 'at.yawk.password:client:1.0-SNAPSHOT'
+    compile 'androidx.appcompat:appcompat:1.0.0'
+    implementation 'at.yawk.password:client:1.0-SNAPSHOT'
     compile 'joda-time:joda-time:2.8.2'
     provided 'org.projectlombok:lombok:1.16.4'
     compile 'com.jakewharton:butterknife:7.0.1'

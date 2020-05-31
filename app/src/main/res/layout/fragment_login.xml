@@ -21,7 +21,6 @@
         android:layout_gravity="center_horizontal"
         android:layout_weight="1"
         android:hint="@string/password"
-        android:imeActionId="@+id/open"
         android:inputType="textPassword"
         android:singleLine="true" />
 
